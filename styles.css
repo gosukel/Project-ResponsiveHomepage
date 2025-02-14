@@ -5,10 +5,68 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    /* background: linear-gradient(to bottom right, #1d386b 65%, white 65% 100%); */
+    background: linear-gradient(175deg, #1d386b 0 60%, #fff 60% 100%);
+    display: flex;
+    padding: 30px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img-container {
+    background-image: url("./media/pictures/desk.jpg");
+    /* height: 250px; */
+    /* width: 250px; */
+    flex-basis: 250px;
+    height: 350px;
+
+    background-size: cover;
+}
+
+.about-container {
+    flex-basis: 600px;
+    /* align-self: center; */
+    background-color: white;
+    box-shadow: 2px 2px 4px #7e7c7c;
+    padding: 15px;
+}
+/* .profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+} */
+
+.about-icons img {
+    width: 20px;
+}
+
 /* MAIN */
 .project-icon-github {
     width: 20px;
 }
 .project-icon-link {
     width: 22px;
+}
+
+/* FOOTER */
+
+.footer-image {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.contact img {
+    width: 20px;
+}
+
+.icon-links img {
+    width: 20px;
 }
