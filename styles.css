@@ -12,7 +12,7 @@ body {
 /* HEADER */
 header {
     /* background: linear-gradient(to bottom right, #1d386b 65%, white 65% 100%); */
-    background: linear-gradient(175deg, #1d386b 0 60%, #fff 60% 100%);
+    background: linear-gradient(175deg, #1d386b 60%, #fff 40%);
     display: flex;
     padding: 30px;
     height: 400px;
@@ -22,29 +22,53 @@ header {
 
 .profile-img-container {
     background-image: url("./media/pictures/desk.jpg");
-    /* height: 250px; */
-    /* width: 250px; */
-    flex-basis: 250px;
-    height: 350px;
-
+    background-position: 55%;
     background-size: cover;
+    flex-basis: 300px;
+    height: 300px;
+    align-items: end;
+    justify-content: center;
+    display: flex;
+}
+
+.profile-img-text {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
 }
 
 .about-container {
-    flex-basis: 600px;
+    flex-basis: 550px;
     /* align-self: center; */
     background-color: white;
     box-shadow: 2px 2px 4px #7e7c7c;
     padding: 15px;
-}
-/* .profile-img {
-    width: 250px;
     height: 250px;
-    object-fit: cover;
-} */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-text {
+    font-size: 14px;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: end;
+}
 
 .about-icons img {
     width: 20px;
+    margin-right: 10px;
+}
+
+#linkedin-icon {
+    width: 32px;
+}
+
+#twitter-icon {
+    width: 25px;
 }
 
 /* MAIN */
