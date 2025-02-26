@@ -55,6 +55,10 @@ header {
     justify-content: space-between;
 }
 
+.about-title {
+    font-weight: 500;
+}
+
 .about-text {
     font-size: 14px;
 }
@@ -84,11 +88,100 @@ header {
 }
 
 /* MAIN */
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.main-container {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.main-header {
+    font-weight: 500;
+}
+
+.project {
+    box-shadow: 2px 2px 4px #bdbaba;
+}
+
+.project-image {
+    height: 150px;
+    text-align: center;
+    justify-items: center;
+    align-content: center;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.project-image.red {
+    background-color: rgb(150, 29, 29);
+}
+
+.project-image.purple {
+    background-color: rgb(160, 107, 221);
+}
+
+.project-image.green {
+    background-color: rgb(61, 129, 61);
+}
+
+.project-image.pink {
+    background-color: rgb(211, 134, 185);
+}
+
+.project-image.orange {
+    background-color: rgb(221, 160, 47);
+}
+
+.project-image.blue {
+    background-color: rgb(98, 195, 228);
+}
+
+.project-details img {
+    justify-self: end;
+    align-self: start;
+}
+
 .project-icon-github {
-    width: 20px;
+    width: 16px;
 }
 .project-icon-link {
-    width: 22px;
+    width: 18px;
+}
+
+.project-details img:hover {
+    transform: scale(1.4);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.project-details {
+    padding: 10px 15px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    row-gap: 8px;
+    height: 120px;
+}
+
+.project-name {
+    font-size: 0.9rem;
+}
+
+.project-description {
+    grid-column: 1 / -1;
+    font-size: 0.65rem;
 }
 
 /* FOOTER */
