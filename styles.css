@@ -11,11 +11,16 @@ body {
 
 /* HEADER */
 header {
-    /* background: linear-gradient(to bottom right, #1d386b 65%, white 65% 100%); */
-    background: linear-gradient(175deg, #1d386b 60%, #fff 40%);
+    background: linear-gradient(169deg, #1d386b 61%, #fff 39%);
     display: flex;
-    padding: 30px;
-    height: 400px;
+    height: 420px;
+    justify-content: center;
+}
+
+.header-container {
+    width: 750px;
+    height: 370px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -29,6 +34,7 @@ header {
     align-items: end;
     justify-content: center;
     display: flex;
+    box-shadow: 2px 2px 4px #7e7c7c;
 }
 
 .profile-img-text {
@@ -61,6 +67,12 @@ header {
 .about-icons img {
     width: 20px;
     margin-right: 10px;
+    transition: all 0.2s ease-out;
+}
+
+.about-icons img:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
 }
 
 #linkedin-icon {
