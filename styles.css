@@ -7,6 +7,7 @@
 
 body {
     width: 100%;
+    --desktop-width: 750px;
 }
 
 /* HEADER */
@@ -18,7 +19,7 @@ header {
 }
 
 .header-container {
-    width: 750px;
+    width: var(--desktop-width);
     height: 370px;
     display: flex;
     justify-content: center;
@@ -91,11 +92,11 @@ header {
 main {
     display: flex;
     justify-content: center;
-    margin-bottom: 45px;
+    padding: 45px 0;
 }
 
 .main-container {
-    width: 750px;
+    width: var(--desktop-width);
     display: flex;
     flex-direction: column;
 }
@@ -186,16 +187,89 @@ main {
 
 /* FOOTER */
 
+footer {
+    background-color: #1d386b;
+    color: white;
+    margin-top: 20px;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: var(--desktop-width);
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer-image {
-    width: 350px;
+    width: 420px;
     height: 350px;
     object-fit: cover;
 }
 
-.contact img {
-    width: 20px;
+.contact-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-.icon-links img {
+.contact-header {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.address-street,
+.address-city {
+    font-size: 0.9rem;
+}
+
+.address-city {
+    margin-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+}
+
+.contact img {
     width: 20px;
+    color: white;
+    filter: brightness(0) saturate(100%) invert(94%) sepia(100%) saturate(0%)
+        hue-rotate(186deg) brightness(107%) contrast(106%);
+    margin-right: 10px;
+}
+
+.icon-links {
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer-icon-github {
+    width: 28px;
+    margin-right: 15px;
+}
+
+.footer-icon-linkedin {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.footer-icon-twitter {
+    width: 34px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7477%)
+        hue-rotate(325deg) brightness(109%) contrast(105%);
+}
+
+.icon-links img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
 }
