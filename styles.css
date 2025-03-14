@@ -279,7 +279,7 @@ footer {
     transition: all 0.2s ease-out;
 }
 
-@media screen and (min-width: 500px) and (max-width: 1000px) {
+@media screen and (min-width: 510px) and (max-width: 1000px) {
     /* HEADER SECTION  WIP */
     header {
         height: 400px;
