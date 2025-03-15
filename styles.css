@@ -198,11 +198,12 @@ footer {
     color: white;
     margin-top: 20px;
     padding: 40px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-container {
     width: var(--desktop-width);
-    justify-self: center;
     display: flex;
     justify-content: space-between;
 }
